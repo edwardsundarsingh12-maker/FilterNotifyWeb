@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filter — Notifications, on your schedule</title>
+<meta name="description" content="Filter is an Android notification manager that decides when each app is allowed to reach you — per app, per channel, on a schedule — and saves every muted notification so nothing is ever lost. 100% offline.">
+<meta name="theme-color" content="#0b0814">
+<link rel="canonical" href="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Filter — Notifications, on your schedule">
+<meta property="og:description" content="Schedule when each app may notify you. Mute a single channel. Read every muted notification later. 100% offline, no accounts, no tracking.">
+<meta property="og:image" content="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/assets/01_save.png">
+<meta property="og:url" content="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon.svg" alt="">
+      <span>Filter<small>SCHEDULE NOTIFICATION</small></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#features">Features</a>
+      <a href="#workflow">How it works</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#faq">FAQ</a>
+      <a href="whats-new.html">What's New</a>
+      <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=com.filternotify.app">Download</a>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================ hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="app-pill reveal in">
+          <img src="assets/icon.svg" alt="">
+          <b>Filter</b> · Android · Free with optional Pro
+        </span>
+
+        <h1 class="reveal in">Notifications,<br><span class="grad">on your schedule.</span></h1>
+
+        <p class="lead reveal in d1">
+          Most apps only record what you missed. Filter decides <b>when</b> each app is allowed to
+          reach you — per app, per channel, on a schedule — and still saves every muted notification,
+          so nothing is ever lost.
+        </p>
+
+        <div class="hero-actions reveal in d2">
+          <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.filternotify.app">
+            <img src="assets/badge-googleplay.svg" alt="Get Filter on Google Play" width="200" height="60">
+          </a>
+          <a class="text-link" href="#workflow">
+            See how it works
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="stats reveal in d3">
+          <div class="stat"><b>100%</b><span>Offline. Nothing is uploaded.</span></div>
+          <div class="stat"><b>Zero</b><span>Ads, accounts and trackers.</span></div>
+          <div class="stat"><b>Nothing</b><span>Muted, but never lost.</span></div>
+        </div>
+      </div>
+
+      <div class="phones reveal in d1">
+        <div class="phone behind left">
+          <img src="assets/app-3.png" alt="Filter's Block All screen with a 22:00 to 07:00 block window" width="460" height="1000">
+        </div>
+        <div class="phone behind right">
+          <img src="assets/app-2.png" alt="Filter's Home tab showing a blocked-today counter above muted notifications" width="460" height="1000">
+        </div>
+        <div class="phone front">
+          <img src="assets/app-1.png" alt="Filter's History tab listing saved and muted notifications from several apps" width="460" height="1000">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== features -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What it does</p>
+        <h2>Control that goes <span class="grad">app by app</span>, hour by hour.</h2>
+        <p class="lead">
+          Do Not Disturb silences everything at once. Turning notifications off destroys them.
+          Filter sits between the two: precise rules, and a complete record of what they caught.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
+            </svg>
+          </div>
+          <h3>Schedule each app separately</h3>
+          <p>
+            Give an app an allow-window and it only gets through inside it. Give it a block-window and
+            it goes quiet just for those hours. Minute precision, any weekdays, wrapping past midnight —
+            22:00 to 07:00 works exactly as you'd expect.
+          </p>
+        </article>
+
+        <article class="card reveal d1">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="12" r="2.4"/>
+            </svg>
+          </div>
+          <h3>Mute one channel, keep the rest</h3>
+          <p>
+            Apps post on separate notification channels. Silence a group-chat channel and let direct
+            messages through. Channels appear as soon as an app posts on one, so the list only ever
+            shows what actually reaches you.
+          </p>
+        </article>
+
+        <article class="card reveal d2">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3>Muted, never missed</h3>
+          <p>
+            A muted notification is written to your history <em>before</em> it is dismissed. The status
+            bar stays quiet; the message is still there when you're ready. Silence stops costing you
+            information.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18.6 18.6A7.9 7.9 0 0 1 18 19H6l1.8-2.5V13a6 6 0 0 1 4.4-5.8"/>
+              <path d="M9.6 5.4A6 6 0 0 1 18 11v2.5"/><path d="m3 3 18 18"/><path d="M10.5 22a2 2 0 0 0 3 0"/>
+            </svg>
+          </div>
+          <h3>Block All — now, or on a timer</h3>
+          <p>
+            One switch mutes every app instantly. The same screen keeps its own set of windows, so
+            "everything quiet 22:00 to 07:00" runs nightly without touching a single per-app rule.
+          </p>
+        </article>
+
+        <article class="card reveal d1">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+            </svg>
+          </div>
+          <h3>Search everything you were sent</h3>
+          <p>
+            Your history is searchable across app name, title and body. Filter it down to All, Muted or
+            Saved, swipe right to keep a notification forever, swipe left to bin it — with undo either
+            way.
+          </p>
+        </article>
+
+        <article class="card reveal d2">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="10" width="16" height="10" rx="2.4"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v2"/>
+            </svg>
+          </div>
+          <h3>Locked to you</h3>
+          <p>
+            Notification history is personal, so app lock is free for everyone. Fingerprint, face or
+            your device PIN gates the whole app at launch and every time you come back to it.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== workflow -->
+  <section id="workflow">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Four steps to a <span class="grad">quieter phone</span>.</h2>
+        <p class="lead">
+          Set it up once. After that Filter only does anything when a notification actually arrives —
+          no polling, no background scanning, no daily maintenance from you.
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <h3>Grant Notification Access</h3>
+          <p>
+            One system permission lets Filter read, log and dismiss notifications. Onboarding walks you
+            to the right screen and checks the two smaller permissions that keep it running reliably.
+          </p>
+        </article>
+
+        <article class="step reveal d1">
+          <h3>Pick what interrupts you</h3>
+          <p>
+            Every installed app is listed and searchable. Flip a switch to mute one outright, or open it
+            and mute individual channels instead.
+          </p>
+        </article>
+
+        <article class="step reveal d2">
+          <h3>Draw your windows</h3>
+          <p>
+            Name them the way you think about them — Sleep, Deep work, Weekend detox. Choose the days, or
+            a specific date range for a holiday, and switch a window off whenever you don't want it.
+          </p>
+        </article>
+
+        <article class="step reveal d3">
+          <h3>Catch up on your terms</h3>
+          <p>
+            The Home tab shows what was just filtered out and a "blocked today" count. History holds the
+            rest, searchable, until you decide what's worth keeping.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== benefits -->
+  <section class="benefits">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Why trust it</p>
+        <h2>Your notifications never <span class="grad">leave your phone</span>.</h2>
+        <p class="lead">
+          Notification content is some of the most sensitive data on a device — messages, codes, health
+          reminders, bank alerts. Filter is built so that none of it has anywhere to go.
+        </p>
+      </div>
+
+      <ul class="checks reveal d1">
+        <li class="check">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b>100% offline</b><span>Everything lives in one local database on your device.</span></div>
+        </li>
+        <li class="check">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b>No account, ever</b><span>No sign-in, no cloud, no sync, nothing to breach.</span></div>
+        </li>
+        <li class="check">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b>No ads, no analytics, no trackers</b><span>Not a single third-party SDK watching what you do.</span></div>
+        </li>
+        <li class="check">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b>Easy on the battery</b><span>Rules are held in memory and applied when a notification arrives — no polling loop.</span></div>
+        </li>
+        <li class="check">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b>Never silenced by surprise</b><span>A quiet status notification tells you while filtering is active.</span></div>
+        </li>
+        <li class="check">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b>A free tier you can actually live on</b><span>Unlimited app and channel muting, Block All and app lock cost nothing.</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================================================== screenshots -->
+  <section id="screenshots">
+    <div class="wrap">
+      <div class="carousel-head reveal">
+        <div class="section-head" style="margin-bottom:0">
+          <p class="eyebrow">Screenshots</p>
+          <h2>Dark, quiet, <span class="grad">out of your way</span>.</h2>
+        </div>
+        <div class="arrows">
+          <button class="arrow" type="button" data-scroll="-1" aria-label="Previous screenshot" aria-controls="rail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18 9 12l6-6"/></svg>
+          </button>
+          <button class="arrow" type="button" data-scroll="1" aria-label="Next screenshot" aria-controls="rail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="rail" id="rail">
+        <figure class="shot reveal">
+          <div class="phone">
+            <img src="assets/app-1.png" alt="History tab: notifications from Instagram, X, Slack, WhatsApp and YouTube tagged Muted or Saved" width="460" height="1000" loading="lazy">
+          </div>
+          <figcaption><b>Everything, in one place</b>Muted and saved side by side, filtered by app.</figcaption>
+        </figure>
+
+        <figure class="shot reveal d1">
+          <div class="phone">
+            <img src="assets/app-2.png" alt="Home tab showing 19 notifications blocked today above the muted feed" width="460" height="1000" loading="lazy">
+          </div>
+          <figcaption><b>See what you didn't have to see</b>A running count of the noise Filter caught today.</figcaption>
+        </figure>
+
+        <figure class="shot reveal d2">
+          <div class="phone">
+            <img src="assets/app-3.png" alt="Block All screen with a 22:00 to 07:00 block window repeating on every day of the week" width="460" height="1000" loading="lazy">
+          </div>
+          <figcaption><b>One switch for the whole phone</b>Block everything now, or every night on a timer.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= faq -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+        <p class="eyebrow" style="justify-content:center">Questions</p>
+        <h2>Good to know <span class="grad">before you start</span>.</h2>
+      </div>
+
+      <div class="faq">
+        <details class="reveal">
+          <summary>Do I lose the notifications Filter mutes?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            No. Filter writes a notification to your local history first and dismisses it second, so a
+            muted notification is always readable afterwards — app, title, body, channel and timestamp
+            included. That's the whole point: quiet without loss.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>Why does Filter need Notification Access?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            It's the only Android permission that lets an app see and dismiss notifications, so nothing
+            works without it. Granting it is a deliberate, manual step in system settings — and what
+            Filter does with it stays entirely on your device.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>Will a muted notification still flash for a moment?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            Sometimes, yes. Android delivers a notification before any app can act on it, so Filter
+            cancels it right after it's posted. On some phones it may briefly appear or make a sound
+            before it disappears. Every app in this category works this way — we'd rather say so than
+            promise otherwise.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>Why can't I see an app's channels yet?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            Android doesn't let one app list another app's notification channels, so Filter learns them
+            live: a channel shows up the first time that app posts a notification on it. Give it a day
+            of normal use and the list fills itself in.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>How long is my history kept?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            Rows older than 30 days are purged automatically to keep the database small. Anything you
+            swipe to save is exempt and stays until you delete it. Settings shows exactly how much space
+            history is using and can wipe it in one action.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>What's free and what's Pro?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            Free covers unlimited per-app and per-channel muting, Block All, the Home feed, biometric app
+            lock, every accent theme, and two schedule windows. Pro removes the window limit and unlocks
+            the full searchable history. It's available monthly, yearly, or as a one-time lifetime
+            purchase through Google Play.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>Does this replace Do Not Disturb?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            It does a different job. Do Not Disturb is one global rule for the whole phone; Filter gives
+            every app its own hours, keeps a record of what it silenced, and can still be overridden
+            instantly with Block All. Many people run both.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>Will it drain my battery?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            It shouldn't. Filter never polls, never scans in the background and never sets alarms — your
+            rules are held in memory and checked only when a notification arrives. Do allow it to skip
+            battery optimisation, though: aggressive power managers on some phones can stop the listener
+            from running.
+          </p>
+        </details>
+
+        <details class="reveal">
+          <summary>Is any of my data uploaded?<span class="plus" aria-hidden="true"></span></summary>
+          <p>
+            None of it. There is no account, no server and no analytics. The app touches the network only
+            for Google Play purchases and to open these legal pages. Uninstalling Filter deletes
+            everything it stored.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= cta -->
+  <section>
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Decide when your phone is <span class="grad">allowed to talk</span>.</h2>
+        <p class="lead">
+          Free to start, no account, nothing leaves your device. Add Pro later if you want unlimited
+          schedules and full history.
+        </p>
+        <div class="cta-actions">
+          <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.filternotify.app">
+            <img src="assets/badge-googleplay.svg" alt="Get Filter on Google Play" width="200" height="60" loading="lazy">
+          </a>
+          <a class="btn btn-ghost" href="whats-new.html">See what's new</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/icon.svg" alt="">
+          <span>Filter<small>SCHEDULE NOTIFICATION</small></span>
+        </a>
+        <p class="blurb">
+          An Android notification manager that schedules, mutes and remembers — entirely on your device.
+        </p>
+        <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.filternotify.app">
+          <img src="assets/badge-googleplay.svg" alt="Get Filter on Google Play" width="180" height="54" loading="lazy">
+        </a>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workflow">How it works</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="whats-new.html">What's New</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal &amp; contact</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="mailto:edwardsundarsingh12@gmail.com">edwardsundarsingh12@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Filter. All rights reserved.</span>
+      <span>Made for Android · Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

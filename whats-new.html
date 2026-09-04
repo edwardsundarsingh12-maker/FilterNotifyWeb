@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's New — Filter</title>
+<meta name="description" content="Release notes for Filter, the Android notification manager that schedules, mutes and remembers your notifications. Every version, searchable.">
+<meta name="theme-color" content="#0b0814">
+<link rel="canonical" href="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/whats-new.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="What's New — Filter">
+<meta property="og:description" content="Release notes for Filter, the Android notification manager that schedules, mutes and remembers your notifications.">
+<meta property="og:image" content="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/assets/01_save.png">
+<meta property="og:url" content="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/whats-new.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon.svg" alt="">
+      <span>Filter<small>SCHEDULE NOTIFICATION</small></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#workflow">How it works</a>
+      <a href="index.html#screenshots">Screenshots</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="whats-new.html">What's New</a>
+      <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=com.filternotify.app">Download</a>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Release notes</p>
+      <h1>What's <span class="grad">new</span></h1>
+      <p class="lead">
+        Every change to Filter, newest first. Search the list to find when a feature landed or a bug
+        went away.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="search-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+        </svg>
+        <input id="changelog-search" type="search" aria-label="Search release notes" placeholder="Search releases — try &ldquo;schedule&rdquo;" autocomplete="off">
+      </div>
+
+      <div class="timeline">
+
+        <!-- Copy this block to add a release. Newest goes first.
+             Add class "feature" to the <article> for a highlighted dot on the rail.
+        <article class="release feature reveal">
+          <div class="release-head">
+            <span class="version">1.1.0</span>
+            <span class="tag new">New</span>
+            <span class="tag improved">Improved</span>
+            <span class="tag fixed">Fixed</span>
+            <span class="date">1 January 2027</span>
+          </div>
+          <div class="release-body">
+            <ul>
+              <li><b>Headline change.</b> One sentence on what it means for the person using it.</li>
+            </ul>
+          </div>
+        </article>
+        -->
+
+        <article class="release feature reveal">
+          <div class="release-head">
+            <span class="version">1.0.0</span>
+            <span class="tag new">New</span>
+            <span class="date">September 2026</span>
+          </div>
+          <div class="release-body">
+            <ul>
+              <li>
+                <b>Scheduled time windows.</b> Give any app as many windows as you need. Allow-windows
+                let notifications through only while they're active; block-windows silence an app just
+                for those hours and always win over an allow-window.
+              </li>
+              <li>
+                <b>Named windows.</b> Call them Sleep, Deep work or Weekend detox, switch each one on or
+                off, pick the weekdays, or set a specific date range for a holiday. Times are
+                minute-precise and wrap past midnight.
+              </li>
+              <li>
+                <b>Per-app muting.</b> Every installed app in one searchable list, with a "show system
+                apps" toggle, a blocked-today count per row, and a shortcut into that app's own
+                notification settings.
+              </li>
+              <li>
+                <b>Per-channel muting.</b> Silence a single notification channel and leave the rest of
+                the app alone. Channels are learned as apps post on them, so the list reflects what
+                actually reaches you.
+              </li>
+              <li>
+                <b>Block All.</b> A global switch that mutes everything immediately, plus its own set of
+                scheduled windows for a nightly blackout that needs no per-app rules.
+              </li>
+              <li>
+                <b>Offline notification history.</b> Every notification is captured — muted ones
+                included — with instant search across app, title and body, All / Muted / Saved tabs and
+                per-app filter chips.
+              </li>
+              <li>
+                <b>Swipe to save or delete.</b> Swipe right to pin a notification past the 30-day
+                auto-purge, swipe left to remove it, and undo either from the snackbar.
+              </li>
+              <li>
+                <b>Home feed.</b> A newest-first view of what Filter just caught, with a blocked-today
+                counter, sorting and a clear-all action.
+              </li>
+              <li>
+                <b>Biometric app lock.</b> Fingerprint, face or device PIN gates the whole app at launch
+                and on resume. Free for everyone — never behind Pro.
+              </li>
+              <li>
+                <b>Four accent themes.</b> Sky Blue, Violet, Emerald and Amber, all on the same dark-first
+                surface.
+              </li>
+              <li>
+                <b>Guided onboarding.</b> A checklist that deep-links to Notification Access, the Android
+                13+ notification permission and the battery-optimisation exemption, so nothing fails
+                silently.
+              </li>
+              <li>
+                <b>Status notification.</b> A quiet, badge-free notice while filtering is active, so
+                you're never muted without knowing. Launcher badging is off by default and toggleable.
+              </li>
+              <li>
+                <b>Built offline.</b> One local database, no accounts, no cloud, no analytics, no ads.
+                Rules live in memory so there's no polling loop and no background drain.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results">No releases match that search.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Ready for a <span class="grad">quieter phone</span>?</h2>
+        <p class="lead">Free to start, no account required, everything stays on your device.</p>
+        <div class="cta-actions">
+          <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.filternotify.app">
+            <img src="assets/badge-googleplay.svg" alt="Get Filter on Google Play" width="200" height="60" loading="lazy">
+          </a>
+          <a class="btn btn-ghost" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/icon.svg" alt="">
+          <span>Filter<small>SCHEDULE NOTIFICATION</small></span>
+        </a>
+        <p class="blurb">
+          An Android notification manager that schedules, mutes and remembers — entirely on your device.
+        </p>
+        <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.filternotify.app">
+          <img src="assets/badge-googleplay.svg" alt="Get Filter on Google Play" width="180" height="54" loading="lazy">
+        </a>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#workflow">How it works</a></li>
+          <li><a href="index.html#screenshots">Screenshots</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="whats-new.html">What's New</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal &amp; contact</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="mailto:edwardsundarsingh12@gmail.com">edwardsundarsingh12@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Filter. All rights reserved.</span>
+      <span>Made for Android · Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
