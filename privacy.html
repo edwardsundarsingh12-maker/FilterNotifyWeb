@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Filter</title>
-<meta name="description" content="Filter's privacy policy. Notification content never leaves your device: no accounts, no cloud, no analytics, no ads and no third-party trackers.">
+<meta name="description" content="Filter's privacy policy. Notification content never leaves your device. Sign-in is optional, there are no ads, and the only data that leaves your phone is described here.">
 <meta name="theme-color" content="#0b0814">
 <link rel="canonical" href="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/privacy.html">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Privacy Policy — Filter">
-<meta property="og:description" content="Notification content never leaves your device: no accounts, no cloud, no analytics, no ads, no trackers.">
+<meta property="og:description" content="Notification content never leaves your device. Sign-in is optional and there are no ads.">
 <meta property="og:image" content="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/assets/01_save.png">
 <meta property="og:url" content="https://edwardsundarsingh12-maker.github.io/FilterNotifyWeb/privacy.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -54,9 +54,9 @@
       <h1>Privacy <span class="grad">Policy</span></h1>
       <p class="lead">
         Filter reads your notifications so it can mute and remember them. This page explains exactly
-        what that means, and why none of it reaches us.
+        what that means, what stays on your phone, and the little that doesn't.
       </p>
-      <p class="updated">Last updated: 4 September 2026</p>
+      <p class="updated">Last updated: 17 October 2026</p>
     </div>
   </section>
 
@@ -68,6 +68,8 @@
           <li><a href="#summary">The short version</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#ondevice">What Filter stores</a></li>
+          <li><a href="#account">Account &amp; cloud backup</a></li>
+          <li><a href="#analytics">Analytics</a></li>
           <li><a href="#never">What we never do</a></li>
           <li><a href="#permissions">Permissions</a></li>
           <li><a href="#billing">Purchases</a></li>
@@ -84,15 +86,18 @@
         <h2 id="summary">The short version</h2>
         <div class="callout">
           <p>
-            <b>Filter has no servers, no accounts and no analytics.</b> Every notification it reads,
-            every rule you create and every entry in your history is stored in a single database on
-            your phone and is never transmitted anywhere. Uninstall the app and all of it is gone.
+            <b>Your notifications never leave your phone.</b> Every notification Filter reads, every
+            channel and schedule you create, and every entry in your history is stored in a database on
+            your device and is never transmitted anywhere. Signing in is optional. If you do sign in
+            with Google, we store your email, name, Pro status, purchase records and &mdash; with Pro &mdash;
+            the list of apps you've blocked, so they can be restored on another device. The app also
+            sends anonymous usage statistics through Firebase Analytics. There are no ads.
           </p>
         </div>
         <p>
-          We think a notification reader is only trustworthy if it is architecturally incapable of
-          leaking what it sees. That is how Filter is built — there is no network code that could send
-          your notification content anywhere, because there is nowhere for it to go.
+          We think a notification reader is only trustworthy if what it reads stays with you. That is
+          how Filter is built: the code that talks to the cloud handles only your account, your
+          purchases and your list of blocked apps, and has no access to notification content.
         </p>
 
         <h2 id="scope">Scope</h2>
@@ -125,18 +130,62 @@
           </li>
         </ul>
         <p>
-          This data stays in the app's private storage. It is not uploaded, backed up to a service of
-          ours, shared with anyone, or used to build a profile. We — the developer — cannot see any of
-          it, and neither can anyone else without physical access to your unlocked device.
+          Notification records, channels, schedule windows and settings stay in the app's private
+          storage. They are not uploaded, shared with anyone, or used to build a profile. We — the
+          developer — cannot see any of it. The only exception is the optional backup of your
+          <b>blocked-app list</b>, described next.
+        </p>
+
+        <h2 id="account">Optional account and cloud backup</h2>
+        <p>
+          You can use every free feature without an account. Signing in with Google is optional and is
+          offered in <b>Settings → Account</b> and when you buy Pro. Sign-in is handled by Google
+          (Android Credential Manager and Firebase Authentication). When you sign in, the following is
+          stored in Google Firebase (Cloud Firestore), readable only by your own account:
+        </p>
+        <ul>
+          <li><b>Profile</b> — your Google email address, display name, and when the account was created.</li>
+          <li>
+            <b>Pro status</b> — whether you have Pro and until when, so it can be restored on your other
+            devices.
+          </li>
+          <li>
+            <b>Purchase records</b> — product, plan, order ID, purchase time and renewal state of each
+            Google Play purchase. The purchase token is never stored.
+          </li>
+          <li>
+            <b>Blocked apps (Pro only)</b> — for each app you block: its package name, its display name,
+            and when it was blocked or unblocked. This lets your blocked apps come back automatically
+            when you sign in on a new phone.
+          </li>
+        </ul>
+        <p>
+          <b>Never uploaded:</b> notification titles, text or any other notification content, your
+          history, saved notifications, notification channels, schedule windows, Block All settings,
+          or app settings.
+        </p>
+        <p>
+          You can sign out at any time in Settings. Firebase is operated by Google; see the
+          <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Firebase privacy information</a>.
+        </p>
+
+        <h2 id="analytics">Analytics</h2>
+        <p>
+          Filter includes <b>Google Analytics for Firebase</b> to understand, in aggregate, how many people
+          use the app and on what devices. It collects the standard automatic events — such as first
+          open, app sessions and app updates — along with device model, Android version, app version,
+          approximate country and an app-instance identifier. Filter does not log any custom events, and
+          never sends notification content, the apps you block, or anything you type. Analytics data
+          is processed by Google under the
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a>.
         </p>
 
         <h2 id="never">What we never do</h2>
         <ul>
-          <li>No account, sign-in, email capture or user identifier of any kind.</li>
-          <li>No cloud storage, no sync between devices, no remote backup.</li>
-          <li>No analytics, telemetry, crash reporting SDKs or usage tracking.</li>
-          <li>No advertising, no ad identifiers, no third-party marketing SDKs.</li>
-          <li>No selling, renting or sharing of personal information — there is none to share.</li>
+          <li>Never upload, read or analyse the content of your notifications on any server.</li>
+          <li>No advertising, no ad SDKs, no third-party marketing tools.</li>
+          <li>No selling or renting of personal information, and no sharing except with the service providers named on this page.</li>
+          <li>Never require an account to use the free app.</li>
         </ul>
 
         <h2 id="permissions">Permissions and why each one exists</h2>
@@ -182,8 +231,9 @@
               <tr>
                 <td>Internet<br><small>INTERNET</small></td>
                 <td>
-                  Used only for Google Play Billing and to open this privacy policy, the terms and the
-                  about page inside the app. It is never used to transmit notification content.
+                  Used for Google Play Billing, optional Google sign-in and cloud backup, Firebase
+                  Analytics, and to open this website inside the app. It is never used to transmit
+                  notification content.
                 </td>
               </tr>
               <tr>
@@ -200,9 +250,10 @@
         <h2 id="billing">Purchases</h2>
         <p>
           Pro is sold through <b>Google Play Billing</b>. Payment details are handled entirely by Google
-          — Filter never sees your card, address or Google account. The app receives only a purchase
-          token that tells it whether an entitlement is active, and stores that locally so Pro features
-          stay unlocked. Google's handling of that transaction is governed by the
+          — Filter never sees your card or billing address. The app receives a purchase confirmation
+          that tells it whether an entitlement is active. Buying Pro asks you to sign in with Google
+          so the purchase can be restored on your other devices; the purchase record stored with your
+          account is listed above. Google's handling of that transaction is governed by the
           <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a>.
         </p>
 
@@ -215,8 +266,9 @@
             immediately.
           </li>
           <li>
-            Uninstalling Filter removes the entire database, including every rule, window and saved
-            notification. There is no backup to restore from, and nothing survives elsewhere.
+            Uninstalling Filter removes the local database, including every rule, window and saved
+            notification. If you signed in, your profile, purchase records and blocked-app backup stay
+            with your account until you ask us to delete them (see <a href="#rights">Your rights</a>).
           </li>
         </ul>
 
@@ -231,23 +283,26 @@
 
         <h2 id="children">Children</h2>
         <p>
-          Filter is a general-purpose utility and is not directed at children under 13. It collects no
-          personal information from anyone, so it holds none from children either. If a child uses a
+          Filter is a general-purpose utility and is not directed at children under 13. We do not
+          knowingly collect personal information from children; if you believe a child has signed in,
+          contact us and we will delete that account's data. If a child uses a
           device with Filter installed, the guidance in this policy applies unchanged.
         </p>
 
         <h2 id="rights">Your rights and choices</h2>
         <p>
           Privacy laws such as the GDPR and CCPA grant rights of access, correction, deletion and
-          portability over personal data held by a company. Because Filter transmits nothing and we hold
-          no data about you, there is no company-held record to access or erase. You exercise full
-          control directly on your device:
+          portability over personal data held by a company. If you never sign in, we hold no record
+          about you beyond anonymous analytics. If you did sign in, email us from that Google account
+          and we will provide or delete your profile, purchase records and blocked-app backup. On your
+          device you have full control:
         </p>
         <ul>
           <li>Revoke Notification Access at any time in Android settings — filtering stops immediately.</li>
           <li>Clear your history from Settings → Storage.</li>
           <li>Delete individual notifications by swiping them away.</li>
-          <li>Uninstall the app to remove everything.</li>
+          <li>Sign out from Settings → Account to stop cloud backup.</li>
+          <li>Uninstall the app to remove everything stored on the device.</li>
         </ul>
         <p>
           If you contact us by email, we will hold your message only as long as needed to answer it.
